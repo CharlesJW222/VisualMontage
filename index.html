@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#faf9f6">
+  <meta name="description" content="VisualMontage studies how authentic image sequences and faithful captions can induce false beliefs in vision-language agents. Explore the method, benchmark, and results across 12 VLMs.">
+  <meta name="author" content="Jinwei Hu">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="VisualMontage — Authentic Images, Misleading Narratives">
+  <meta property="og:description" content="Manipulating the Beliefs of Vision-Language Agents with Authentic Image Sequences. A study across 12 VLMs, 544 cases, and eight domains.">
+  <meta property="og:url" content="https://CharlesJW222.github.io/VisualMontage/">
+  <meta property="og:image" content="https://CharlesJW222.github.io/VisualMontage/assets/images/social-preview.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://CharlesJW222.github.io/VisualMontage/">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/data.js" defer></script>
+  <script src="assets/js/site.js" defer></script>
+  <title>VisualMontage | Jinwei Hu</title>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="wordmark" href="#" aria-label="VisualMontage home">
+        <svg class="brand-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true"><rect x="3" y="5" width="26" height="22" rx="4" stroke="currentColor" stroke-width="2"/><path d="M9 5v22M23 5v22M3 11h6m-6 10h6m14-10h6m-6 10h6" stroke="currentColor" stroke-width="2"/><path d="m13 11 7 5-7 5V11Z" fill="currentColor"/></svg>
+        Visual<span>Montage</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-links"><span></span><span></span></button>
+      <div class="nav-links" id="nav-links">
+        <a href="#overview">Overview</a><a href="#method">Method</a><a href="#benchmark">Benchmark</a><a href="#results">Results</a><a href="#news">News <span class="news-dot" aria-hidden="true"></span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero container" aria-labelledby="project-title">
+      <p class="eyebrow"><span class="small-rule"></span> Visual reasoning · Multimodal robustness</p>
+      <h1 id="project-title">Visual<span>Montage</span><span class="title-subtitle">Manipulating the Beliefs of Vision-Language Agents<br class="desktop-break"> with Authentic Image Sequences</span></h1>
+      <div class="authors"><span>Jinwei Hu</span></div>
+      <p class="affiliation">School of Computer Science and Informatics,<br class="mobile-break"> University of Liverpool, UK</p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="#results">Explore the results <span aria-hidden="true">↗</span></a>
+        <a class="button button-secondary" href="#news"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 2.5h7l3 3V17H5V2.5Z" stroke="currentColor" stroke-width="1.5"/><path d="M11.5 2.5V6H15M7.5 9h5m-5 3h5" stroke="currentColor" stroke-width="1.5"/></svg> arXiv <span class="button-note">Coming soon</span></a>
+      </div>
+      <p class="hero-thesis">Authentic images. Faithful captions. <em>False conclusions.</em></p>
+      <p class="hero-intro">What happens when every post is locally factual,<br class="desktop-break"> but the story they tell together is wrong?</p>
+      <figure class="hero-figure">
+        <a class="figure-link" href="assets/images/teaser.webp" data-lightbox data-caption="Visual cognitive collusion: authentic observations are composed into a misleading narrative.">
+          <img src="assets/images/teaser.webp" width="2400" height="1736" alt="Comparison of attacks: fabricated imagery, hidden payloads, and VisualMontage, which rearranges authentic images to induce a false narrative." fetchpriority="high">
+          <span class="zoom-hint" aria-hidden="true">↗ Enlarge figure</span>
+        </a>
+        <figcaption>Visual cognitive collusion targets the <strong>relations inferred between authentic observations</strong>.</figcaption>
+      </figure>
+    </section>
+
+    <section class="news-section container" id="news" aria-labelledby="news-title">
+      <div class="news-heading"><span class="section-kicker">Stay tuned</span><h2 id="news-title">News</h2></div>
+      <ul class="release-list">
+        <li><span class="release-name">arXiv preprint</span><span class="status-badge">Coming soon</span></li>
+        <li><span class="release-name">Code</span><span class="status-badge">Coming soon</span></li>
+        <li><span class="release-name">Dataset</span><span class="status-badge">Coming soon</span></li>
+      </ul>
+    </section>
+
+    <section class="section section-overview" id="overview" aria-labelledby="overview-title">
+      <div class="container narrow">
+        <div class="section-heading"><span class="section-kicker">01 / The idea</span><h2 id="overview-title">Local truth. Global falsehood.</h2></div>
+        <div class="abstract">
+          <p>As vision-language agents increasingly interpret social-media content, their analyses may lend credibility to rumors. We study <strong>visual cognitive collusion</strong>: coordinated posts combine authentic images and locally faithful captions to make an agent accept an attacker-chosen claim that is contradicted by the complete source context.</p>
+          <p>We introduce <strong>VisualMontageBench</strong>, with 544 evaluated cases from 61 videos across eight domains, and <strong>VisualMontage</strong>, a multi-agent framework for narrative planning, image selection and ordering, and caption assignment under iterative review. The same frozen attack feeds are evaluated across 12 VLMs, without victim-specific optimization.</p>
+          <p>The results reveal confident false acceptance across model families, substantial residual vulnerability after downstream review, and a surprising tension: captions can make posts appear more natural while reducing their deceptive effectiveness.</p>
+        </div>
+      </div>
+      <div class="container key-stats" aria-label="Key experimental results">
+        <div class="stat"><span class="stat-number">61.93<span>%</span></span><span class="stat-label">Mean ASR · proprietary models</span><span class="stat-detail">6 models, identical frozen feeds</span></div>
+        <div class="stat"><span class="stat-number">68.71<span>%</span></span><span class="stat-label">Mean ASR · open-weight models</span><span class="stat-detail">6 models, identical frozen feeds</span></div>
+        <div class="stat"><span class="stat-number">92.65<span>%</span></span><span class="stat-label">Independent audit pass rate</span><span class="stat-detail">Model-based checks on generated feeds</span></div>
+      </div>
+    </section>
+
+    <section class="section" id="method" aria-labelledby="method-title">
+      <div class="container">
+        <div class="section-heading"><span class="section-kicker">02 / The method</span><h2 id="method-title">Inside the Collusive Montage Studio</h2><p>Four roles turn authentic source observations into a coordinated sequence.</p></div>
+        <ol class="role-list">
+          <li><span class="role-number">01</span><h3>Screenwriter</h3><p>Plans event roles and the misleading relations that a sequence should suggest.</p></li>
+          <li><span class="role-number">02</span><h3>Visual Editor</h3><p>Selects and orders authentic frames to realize the narrative.</p></li>
+          <li><span class="role-number">03</span><h3>Caption Editor</h3><p>Assigns image, text, or paired posts with locally faithful captions.</p></li>
+          <li><span class="role-number">↻</span><h3>Director</h3><p>Reviews factuality, estimated target support, and individual-post influence.</p></li>
+        </ol>
+        <figure class="paper-figure">
+          <a class="figure-link" href="assets/images/framework.webp" data-lightbox data-caption="VisualMontage: source preparation, coordinated composition, distributed publication, and downstream evaluation.">
+            <img src="assets/images/framework.webp" width="2400" height="1509" loading="lazy" decoding="async" alt="VisualMontage pipeline showing source event parsing, Screenwriter, Visual Editor, Caption Editor, Director feedback, coordinated publishers, and victim and judge evaluation.">
+            <span class="zoom-hint" aria-hidden="true">↗ Enlarge figure</span>
+          </a>
+          <figcaption>Accepted compositions are presented through coordinated publisher identities. Victim responses, majority voting, and downstream judges measure whether the false belief arises and persists.</figcaption>
+        </figure>
+        <div class="method-note"><span class="note-mark" aria-hidden="true">↳</span><p><strong>The victim stays outside the construction loop.</strong> Its weights and instructions are unchanged, and it is not queried to select or refine the test feeds.</p></div>
+      </div>
+    </section>
+
+    <section class="section section-tinted" id="examples" aria-labelledby="examples-title">
+      <div class="container">
+        <div class="section-heading"><span class="section-kicker">03 / A closer look</span><h2 id="examples-title">Same frames. A different story.</h2><p>Matched-content examples isolate what a change in presentation order can suggest.</p></div>
+        <figure class="paper-figure case-figure">
+          <a class="figure-link" href="assets/images/case-study.webp" data-lightbox data-caption="Paired launch-recording cases. Both targets are false under the source context. The figure reports successful and unsuccessful montage examples.">
+            <img src="assets/images/case-study.webp" width="2400" height="1378" loading="lazy" decoding="async" alt="Two launch-recording examples compare identical frames in source and montage order. M03 induces an explosion narrative; in M09, the victim questions whether the images establish the claimed identity and action.">
+            <span class="zoom-hint" aria-hidden="true">↗ Enlarge figure</span>
+          </a>
+          <figcaption>Both target claims are source-verified false. In the first example, flight followed by fire and smoke suggests an explosion. In the second, the model questions whether the evidence establishes the claimed identity, event, and action.</figcaption>
+        </figure>
+        <p class="figure-footnote">These paired illustrations preserve the selected frames. The aggregate source-order and random-order baselines below resample from the full source video.</p>
+      </div>
+    </section>
+
+    <section class="section" id="benchmark" aria-labelledby="benchmark-title">
+      <div class="container benchmark-layout">
+        <div class="benchmark-copy"><span class="section-kicker">04 / The benchmark</span><h2 id="benchmark-title">VisualMontageBench</h2><p>Authentic visual observations paired with claims contradicted by their source context.</p>
+          <dl class="benchmark-stats"><div><dt>Evaluated cases</dt><dd>544</dd></div><div><dt>Source videos</dt><dd>61</dd></div><div><dt>Application domains</dt><dd>8</dd></div><div><dt>Candidate-frame instances</dt><dd>33.2K</dd></div></dl>
+          <p class="fine-print">544 of 620 declared source–target pairs enter evaluation. Candidate frames are counted across target-specific pools, including reused source frames. Evaluated feeds contain 5–12 items.</p>
+        </div>
+        <div class="domain-panel"><div class="panel-heading"><h3>Eight domains, one shared question</h3><span>Evaluated cases</span></div><div id="domain-chart" class="domain-chart"></div><noscript><p>Emergency Response: 101 · Search &amp; Rescue: 121 · Public Safety: 65 · Aerospace Operations: 38 · Industrial Operations: 77 · Animal Rescue: 62 · Sports Training: 42 · Film &amp; Animation: 38.</p></noscript><p class="panel-note">Can a composition of locally factual posts produce a source-contradicted interpretation?</p></div>
+      </div>
+    </section>
+
+    <section class="section section-tinted" id="results" aria-labelledby="results-title">
+      <div class="container">
+        <div class="section-heading"><span class="section-kicker">05 / The evidence</span><h2 id="results-title">A vulnerability across model families</h2><p>The same 544 frozen feeds. Twelve VLMs. No victim-specific refinement.</p></div>
+        <div class="results-panel">
+          <div class="results-toolbar"><div><h3>False-target acceptance</h3><p>Attack success rate (ASR), %</p></div><div class="filter-group" role="group" aria-label="Filter model families"><button type="button" class="filter-button is-active" data-model-filter="all" aria-pressed="true">All models</button><button type="button" class="filter-button" data-model-filter="proprietary" aria-pressed="false">Proprietary</button><button type="button" class="filter-button" data-model-filter="open" aria-pressed="false">Open-weight</button></div></div>
+          <div class="chart-legend"><span><i class="legend-key source-key"></i>Source-order</span><span><i class="legend-key montage-key"></i>VisualMontage</span></div>
+          <div class="model-chart" id="model-chart" aria-label="Source-order versus VisualMontage attack success by model"></div>
+          <p class="chart-axis-label">Attack success rate (%)</p>
+          <p id="filter-status" class="visually-hidden" aria-live="polite">Showing all 12 models.</p>
+          <noscript><p>The proprietary group averages 7.61% source-order ASR and 61.93% VisualMontage ASR. The open-weight group averages 9.01% and 68.71%, respectively.</p></noscript>
+          <details class="results-details"><summary>View all numerical results <span aria-hidden="true">+</span></summary><div class="table-scroll" role="region" aria-label="Model results table" tabindex="0"><table><caption>Rates are percentages. Confidence is on a 0–1 scale.</caption><thead><tr><th scope="col">Model</th><th scope="col">No evidence</th><th scope="col">Source-order</th><th scope="col">Random-order</th><th scope="col">ASR</th><th scope="col">HC-ASR</th><th scope="col">V-ASR</th><th scope="col">Conf.⁺</th></tr></thead><tbody id="model-table"></tbody></table></div></details>
+        </div>
+        <div class="results-notes"><p><strong>How to read the results.</strong> ASR counts acceptance of a source-verified false claim. HC-ASR also requires reported confidence ≥ 0.8. V-ASR additionally requires independent audit passage. All three retain the full evaluated cohort in the denominator, with five scheduled responses per case.</p><p><strong>What the comparison measures.</strong> Source-order and random-order resample frames from the full recording. Their differences from VisualMontage measure selection and arrangement together, rather than an isolated ordering effect.</p></div>
+      </div>
+    </section>
+
+    <section class="section" id="findings" aria-labelledby="findings-title">
+      <div class="container">
+        <div class="section-heading"><span class="section-kicker">06 / Beyond the headline</span><h2 id="findings-title">What makes the attack work?</h2><p>Modality, downstream review, and sequence length reveal distinct trade-offs.</p></div>
+        <div class="finding-tabs" role="tablist" aria-label="Additional experimental findings"><button type="button" id="tab-modality" role="tab" aria-selected="true" aria-controls="panel-modality" tabindex="0">01 <span>Images &amp; captions</span></button><button type="button" id="tab-review" role="tab" aria-selected="false" aria-controls="panel-review" tabindex="-1">02 <span>Downstream review</span></button><button type="button" id="tab-length" role="tab" aria-selected="false" aria-controls="panel-length" tabindex="-1">03 <span>Sequence length</span></button></div>
+
+        <div class="finding-panel" id="panel-modality" role="tabpanel" aria-labelledby="tab-modality" tabindex="0">
+          <div class="finding-copy"><span class="finding-label">The caption trade-off</span><h3>More natural does not always mean more persuasive.</h3><p>Images alone achieve higher attack success than the published mixed feed in the controlled modality study. Faithful captions may anchor visible details and limit the misleading relations inferred from images.</p><p>Yet adding captions improves model-rated posting naturalness: <strong>52.63% → 84.21%</strong> on Aerospace Operations.</p><p class="fine-print">Modality study: GPT-5.6-luna, Aerospace Operations. Naturalness is rated by Claude Haiku 5.5. These are scoped experimental findings, not a claim about every model or domain.</p></div>
+          <div class="finding-visual"><h4>Attack success by visible evidence</h4><div class="simple-bar-chart"><div class="simple-bar-row"><div><span>Images only</span><strong>72.11%</strong></div><div class="simple-track"><span style="--value:72.11%"></span></div></div><div class="simple-bar-row"><div><span>Published mixed feed</span><strong>63.68%</strong></div><div class="simple-track"><span style="--value:63.68%"></span></div></div><div class="simple-bar-row"><div><span>Captions only</span><strong>41.58%</strong></div><div class="simple-track"><span style="--value:41.58%"></span></div></div></div><p class="chart-note">Replacing neutral captions with attack captions changes ASR from 61.05% to 63.68% (+2.63 percentage points).</p></div>
+        </div>
+
+        <div class="finding-panel" id="panel-review" role="tabpanel" aria-labelledby="tab-review" tabindex="0" hidden>
+          <div class="finding-copy"><span class="finding-label">The review gap</span><h3>Agreement over a feed cannot verify its source context.</h3><p>Majority voting remains close to single-response results. Downstream judge review reduces false acceptance, but residual ASR still ranges from <strong>35.3% to 76.7%</strong> across the evaluated victim–judge configurations.</p><p>Reviewing another agent’s confident rationale can also sustain false conclusions.</p><p class="fine-print">The chart averages model-level rates within each family. Victim alone uses the first response; majority uses five; judges receive the feed with verdicts, confidence, and rationales.</p></div>
+          <figure class="finding-visual review-visual"><a class="figure-link" href="assets/images/downstream-review.webp" data-lightbox data-caption="Residual attack success after first-response decisions, majority voting, and judge review with full victim reports."><img src="assets/images/downstream-review.webp" width="1800" height="581" loading="lazy" decoding="async" alt="Grouped bar chart showing residual ASR for five model families. Judge review reduces false acceptance, while majority voting offers little reduction."><span class="zoom-hint" aria-hidden="true">↗ Enlarge figure</span></a><figcaption>Residual attack success after downstream decisions.</figcaption></figure>
+        </div>
+
+        <div class="finding-panel" id="panel-length" role="tabpanel" aria-labelledby="tab-length" tabindex="0" hidden>
+          <div class="finding-copy"><span class="finding-label">The length trade-off</span><h3>Longer sequences are not reliably stronger.</h3><p>Conditional ASR peaks at 15 items, but many construction attempts fail to produce a valid successful feed. Once failed attempts count, the ranking changes.</p><p>Six items reach <strong>33.90% end-to-end valid success</strong>, compared with 9.86% at 15 items.</p><p class="fine-print">E2E V-ASR requires independent validity and majority false acceptance, divided by all construction attempts. Results apply to the reported fixed-budget sweep; they do not establish a universal optimal length.</p></div>
+          <div class="finding-visual length-visual"><h4>Success depends on the denominator</h4><div class="chart-legend"><span><i class="legend-key montage-key"></i>ASR on completed feeds</span><span><i class="legend-key valid-key"></i>E2E valid success</span></div><div id="length-chart" class="length-chart"></div><p class="chart-note">Sequence length (items). Both rates are percentages.</p></div>
+        </div>
+        <noscript><style>.finding-tabs{display:none}.finding-panel[hidden]{display:grid!important}</style></noscript>
+      </div>
+    </section>
+
+    <section class="takeaway-section">
+      <div class="container narrow"><span class="section-kicker">The takeaway</span><h2>Verify the story,<br>as well as the evidence.</h2><p>Checking individual posts cannot establish that the relations inferred across them are true. VisualMontage provides a testbed for studying that gap in vision-language agents.</p><p class="takeaway-scope">The current evidence comes from controlled simulations and model-based auditing. Long-term diffusion in real social networks and the effectiveness of source-context defenses remain open questions.</p><a class="text-link" href="#news">Code, dataset &amp; arXiv updates <span aria-hidden="true">↗</span></a></div>
+    </section>
+  </main>
+
+  <footer class="site-footer container"><div><a class="wordmark" href="#">Visual<span>Montage</span></a><p>Jinwei Hu · University of Liverpool</p></div><div class="footer-links"><a href="https://github.com/CharlesJW222/VisualMontage" target="_blank" rel="noopener noreferrer">Project repository <span aria-hidden="true">↗</span></a><span>Layout inspired by <a href="https://hzlsaber.github.io/projects/SIDA/" target="_blank" rel="noopener noreferrer">SIDA</a>.</span></div></footer>
+
+  <dialog class="lightbox" id="figure-dialog" aria-label="Expanded research figure"><div class="lightbox-toolbar"><span>Figure viewer</span><button class="lightbox-close" type="button" aria-label="Close expanded figure">Close <span aria-hidden="true">×</span></button></div><div class="lightbox-image-wrap"><img id="lightbox-image" alt=""></div><p id="lightbox-caption"></p><a class="text-link" id="lightbox-original" target="_blank" rel="noopener noreferrer">Open full-resolution image ↗</a></dialog>
+</body>
+</html>
