@@ -2,11 +2,11 @@
 
 **Manipulating the Beliefs of Vision-Language Agents with Authentic Image Sequences**
 
-**Jinwei Hu<sup>1,*</sup>, Weilai<sup>1,*</sup>, Zhuoyun Li<sup>1</sup>, Youcheng Sun<sup>2</sup>, Yi Dong<sup>1</sup>, Xiaowei Huang<sup>1</sup>**
+**Jinwei Hu<sup>1,*</sup>, Wei Lai<sup>1,*</sup>, Zhuoyun Li<sup>1</sup>, Youcheng Sun<sup>2</sup>, Yi Dong<sup>1</sup>, Xiaowei Huang<sup>1</sup>**
 
 <sup>1</sup> School of Computer Science and Informatics, University of Liverpool, UK
 
-<sup>2</sup> Department of Computer Science, MBZUAI
+<sup>2</sup> Department of Computer Science, MBZUAI, United Arab Emirates
 
 <sup>*</sup> Equal contribution.
 
