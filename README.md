@@ -6,7 +6,7 @@
 
 <sup>1</sup> School of Computer Science and Informatics, University of Liverpool, UK
 
-<sup>2</sup> Department of Computer Science, MBZUAI, United Arab Emirates
+<sup>2</sup> Department of Computer Science, MBZUAI, UAE
 
 <sup>*</sup> Equal contribution.
 
