@@ -45,5 +45,3 @@ When release links become available, replace their **Coming soon** labels and up
 ### GitHub Pages
 
 Publish from the **main** branch and **/ (root)** folder in **Settings → Pages**. The `.nojekyll` file enables a plain static site. Publishing the page does not require uploading the manuscript PDF or research data.
-
-The page layout takes inspiration from [SIDA](https://hzlsaber.github.io/projects/SIDA/); the HTML, styles, and interactions here are implemented independently.
