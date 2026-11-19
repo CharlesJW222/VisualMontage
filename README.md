@@ -1,8 +1,7 @@
 # VisualMontage
 
 Code release for the paper **"VisualMontage: Manipulating the Beliefs of
-Vision-Language Agents with Authentic Image Sequences"** (under review; this
-repository is anonymized for double-blind review).
+Vision-Language Agents with Authentic Image Sequences"**.
 
 VisualMontage studies *visual cognitive collusion*: coordinated publishers
 select, order, and faithfully describe **authentic, unmodified** source images
@@ -242,6 +241,5 @@ the source videos. The fourth is the first item under
 
 ## License and citation
 
-A license file will be added with the de-anonymized release. Until then the
-code is provided for peer review only. Citation details will be added after the
-review period.
+A license file will be added later. Until then the code is provided for peer
+review only. Citation details will be added after the review period.
