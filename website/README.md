@@ -9,7 +9,7 @@ VisualMontage studies visual cognitive collusion: authentic images and locally f
 ## News
 
 - **arXiv preprint:** Coming soon.
-- **Code:** Coming soon.
+- **Code:** [Available on GitHub](https://github.com/CharlesJW222/VisualMontage).
 - **Dataset:** Coming soon.
 
 ## Project page

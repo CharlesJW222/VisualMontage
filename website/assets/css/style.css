@@ -83,6 +83,9 @@ figcaption { margin-top: 18px; color: var(--muted); font-size: 13px; line-height
 .release-name { font-weight: 600; font-size: 14px; }
 .status-badge { color: var(--muted); font-size: 11px; display: inline-flex; align-items: center; gap: 6px; }
 .status-badge::before { content: ""; width: 5px; height: 5px; background: #9a8cb7; border-radius: 50%; }
+.status-badge.release-link { color: var(--accent); }
+.status-badge.release-link::before { background: currentColor; }
+.status-badge.release-link:hover { text-decoration: underline; }
 .section { padding: 90px 0; }
 .section-overview { padding-bottom: 68px; }
 .section-tinted { background: var(--paper); border-block: 1px solid #efedf0; }
